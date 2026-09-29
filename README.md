@@ -1,10 +1,10 @@
 # Autonomous-Line-Following-Hovercraft
 A hovercraft built for an engineering robotics class. It lifts on a cardboard deck with a trash-bag skirt, follows a black line using two light sensors, and controls its propulsion fan and rudder with LEGO SPIKE motors. Built by a team of five.
 
-![Top view](images/top-view.jpg)
+![Top view](top_view.jpg)
 
 ## Demo
-[Watch the best run](PASTE-YOUTUBE-LINK-HERE)
+[Watch the best run](https://youtu.be/6B0CxJRYSJI)
 
 ## Design Overview
 - **Deck:** cardboard, 10 in x 20 in (0.129 m²), reinforced with a misprinted 3D-printed fan guard
@@ -20,12 +20,12 @@ A hovercraft built for an engineering robotics class. It lifts on a cardboard de
 
 | Side | Bottom |
 |------|--------|
-| ![Side view](images/side-view.jpg) | ![Bottom view](images/bottom-view.jpg) |
+| ![Side view](side_view.jpg) | ![Bottom view](bottom_view.jpg) |
 
 ## Programming
 Programmed with LEGO SPIKE's block-based editor. Four programs run at the same time:
 
-![Code](code/hovercraft-code.png)
+![Code](hovercraft-code.png)
 
 1. **Line following:** waits 5 seconds so the hovercraft can be set down. The rudder then turns 110° one way, which presses the power button and turns on the hovercraft, and turns 110° back to center. It then loops forever, reading the left and right light sensors and subtracting them to get an error. If the error is small, the rudder returns to center. Otherwise it steers proportionally (error x 0.05).
 2. **Throttle control:** a motor turns the speed controller knob to set fan speed, then holds it for the run.
@@ -40,7 +40,7 @@ Programmed with LEGO SPIKE's block-based editor. Four programs run at the same t
 ## What Went Wrong
 
 ### Speed Controller Failure
-![Failed speed controller](images/speed-controller-failure.jpg)
+![Failed speed controller](speed-controller-failure.jpg)
 
 During testing, the speed controller board failed. A component (it appears to be an electrolytic capacitor) ruptured and left burnt debris on the board.
 
